@@ -4,9 +4,6 @@
 [![pipeline status](https://gitlab.com/bloom42/www/badges/master/pipeline.svg)](https://gitlab.com/bloom42/www/pipelines)
 
 
-[https://bloom.sh](https://bloom.sh)
-
-
 ## Contributing
 
 See [https://opensource.bloom.sh/contributing](https://opensource.bloom.sh/contributing)
