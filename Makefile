@@ -24,7 +24,7 @@ clean:
 lint:
 	npm run lint
 
-test: lint
+test:
 	npm run test:unit
 
 re: clean build

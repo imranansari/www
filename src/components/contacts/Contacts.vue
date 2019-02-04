@@ -237,7 +237,7 @@ export default class Contacts extends Vue {
   }
 
   search(query: string) {
-    console.log(query); // TODO
+    const _ = query; // TODO
   }
 }
 </script>
