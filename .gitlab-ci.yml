@@ -1,0 +1,57 @@
+image: node:10-alpine
+
+stages:
+  - lint
+  - build
+  - deploy
+
+before_script:
+  - apk add make
+  - npm config set unsafe-perm true
+  - npm install -g firebase-tools
+  - npm install
+
+lint:
+  stage: lint
+  tags:
+    - docker
+    - bloom42cicd
+  script:
+    - make lint
+
+build:
+  stage: build
+  tags:
+    - docker
+    - bloom42cicd
+  script:
+    - make
+
+deploy_staging:
+  only:
+    - tags
+  stage: deploy
+  environment:
+    name: staging
+    url: https://streamx.xyz
+  tags:
+    - docker
+    - bloom42cicd
+  script:
+    - make build_staging
+    - firebase deploy -P staging --token $FIREBASE_TOKEN
+
+deploy_production:
+  when: manual
+  only:
+    - tags
+  stage: deploy
+  environment:
+    name: production
+    url: https://bloom.sh
+  tags:
+    - docker
+    - bloom42cicd
+  script:
+    - make build
+    - firebase deploy -P www --token $FIREBASE_TOKEN
