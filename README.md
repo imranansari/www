@@ -1,5 +1,7 @@
 # www
 
+[![Build Status](https://travis-ci.org/bloom42/www.svg?branch=master)](https://travis-ci.org/bloom42/www)
+
 [https://bloom.sh](https://bloom.sh)
 
 
