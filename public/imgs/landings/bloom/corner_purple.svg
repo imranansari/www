@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="607" height="435" viewBox="0 0 607 435">
+  <defs>
+    <rect id="dark-purple-rectangle-a" width="724" height="435" rx="10"/>
+    <radialGradient id="dark-purple-rectangle-b" cx="27.554%" cy="35.715%" r="35.636%" fx="27.554%" fy="35.715%" gradientTransform="matrix(0 1 -.96742 0 .621 .082)">
+      <stop offset="0%" stop-color="#A184FF"/>
+      <stop offset="100%" stop-color="#666CDC"/>
+    </radialGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-117)">
+    <mask id="dark-purple-rectangle-c" fill="#fff">
+      <use xlink:href="#dark-purple-rectangle-a"/>
+    </mask>
+    <path fill="url(#dark-purple-rectangle-b)" d="M119.490454,286.156722 L542.677226,-200.998454 C546.355782,-205.230148 552.768306,-205.678555 557,-202 L1329.56587,466.97803 C1333.79757,470.656586 1334.24597,477.06911 1330.56742,481.300804 L907.380645,968.45598 C903.70209,972.687674 897.289566,973.136081 893.057872,969.457526 L120.492,300.479495 C116.260306,296.80094 115.811899,290.388416 119.490454,286.156722 Z" mask="url(#dark-purple-rectangle-c)"/>
+  </g>
+</svg>
