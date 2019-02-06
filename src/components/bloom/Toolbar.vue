@@ -195,7 +195,7 @@ export default class Toolbar extends Vue {
         this.searchbar_label = 'Search';
         break;
     }
-    document.title = `Bllom ${this.secondary_title}`;
+    document.title = `Bloom ${this.secondary_title}`;
     if (!this.$route.meta.auth || this.$route.meta.auth.layout !== 'authenticated') {
       this.side_icon = false;
     }
