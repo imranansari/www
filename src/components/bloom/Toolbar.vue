@@ -26,7 +26,7 @@
 
     <v-spacer></v-spacer>
 
-    <v-tooltip bottom>
+    <v-tooltip bottom v-if="$store.state.session">
       <v-btn slot="activator" icon to="/" class="hidden-xs-only">
         <v-icon>mdi-apps</v-icon>
       </v-btn>
@@ -45,6 +45,7 @@
       transition="slide-y-transition"
       class="hidden-xs-only"
       v-if="$store.state.session"
+      left
       >
       <v-btn icon slot="activator">
         <v-avatar size="40">
@@ -209,6 +210,10 @@ export default class Toolbar extends Vue {
 
 
 <style scoped lang="scss">
+.blm-toolbar-menu-account {
+  right: 20px;
+  left: 0px;
+}
 .blm-toolbar-title {
   font-family: rounded_elegance;
 }
