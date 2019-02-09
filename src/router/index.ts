@@ -16,6 +16,7 @@ import PlatformRoutes from './platform';
 import BitflowRoutes from './bitflow';
 import NotesRoutes from './notes';
 import ContactsRoutes from './contacts';
+import CalendarRoutes from './calendar';
 
 
 Vue.use(Router);
@@ -82,6 +83,7 @@ const router = new Router({
     ...BitflowRoutes,
     ...NotesRoutes,
     ...ContactsRoutes,
+    ...CalendarRoutes,
     { path: '**', redirect: '/' },
   ],
 });

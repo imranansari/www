@@ -169,19 +169,16 @@ export default class Toolbar extends Vue {
         this.secondary_title = 'Platform';
         this.side_icon = true;
         this.display_searchbar = false;
-        this.searchbar_label = '';
         break;
       case 'bitflow':
         this.secondary_title = 'Bitflow';
         this.side_icon = true;
         this.display_searchbar = false;
-        this.searchbar_label = '';
         break;
       case 'notes':
         this.secondary_title = 'Notes';
         this.side_icon = true;
-        // this.display_searchbar = true;
-        // this.searchbar_label = 'Search Notes';
+        this.display_searchbar = false;
         break;
       case 'contacts':
         this.secondary_title = 'Contacts';
@@ -189,11 +186,16 @@ export default class Toolbar extends Vue {
         this.display_searchbar = true;
         this.searchbar_label = 'Search Contacts';
         break;
+      case 'calendar':
+        this.secondary_title = 'Calendar';
+        this.side_icon = false;
+        this.display_searchbar = false;
+        break;
       default:
         this.secondary_title = '';
         this.side_icon = false;
         this.display_searchbar = false;
-        this.searchbar_label = 'Search';
+        this.searchbar_label = '';
         break;
     }
     document.title = `Bloom ${this.secondary_title}`;
