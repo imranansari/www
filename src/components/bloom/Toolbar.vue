@@ -210,10 +210,6 @@ export default class Toolbar extends Vue {
 
 
 <style scoped lang="scss">
-.blm-toolbar-menu-account {
-  right: 20px;
-  left: 0px;
-}
 .blm-toolbar-title {
   font-family: rounded_elegance;
 }
