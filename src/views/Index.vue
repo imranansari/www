@@ -7,7 +7,7 @@
           fluid
           grid-list-md
           >
-          <v-layout row wrap justify-center>
+          <v-layout row wrap justify-left>
             <v-flex
             v-for="card in cards"
             xs4
@@ -69,6 +69,12 @@ export default class Index extends Vue {
       src: '/imgs/logos/bitflow_256.png',
       to: '/bitflow',
       tooltip: 'Download manager in the cloud',
+    },
+    {
+      name: 'Calendar',
+      src: '/imgs/logos/calendar_256.png',
+      to: '/calendar',
+      tooltip: 'Get organized on the go with the Bloom Calendar',
     },
     {
       name: 'Contacts',
