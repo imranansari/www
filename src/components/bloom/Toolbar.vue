@@ -4,8 +4,10 @@
       <v-icon>mdi-menu</v-icon>
     </v-toolbar-side-icon>
     <router-link to="/">
-      <v-toolbar-title class="mr-5 align-center">
-        <span class="blm-toolbar-title">Bloom</span> {{ secondary_title }}
+      <v-toolbar-title class="mr-5 align-cente">
+        <span class="blm-toolbar-title">
+          <span class="blm-toolbar-title-primary"><b>Bloom</b></span> {{ secondary_title }}
+        </span>
       </v-toolbar-title>
     </router-link>
 
@@ -212,8 +214,12 @@ export default class Toolbar extends Vue {
 
 
 <style scoped lang="scss">
-.blm-toolbar-title {
+.blm-toolbar-title-primary {
   font-family: rounded_elegance;
+  font-size: unset;
+}
+.blm-toolbar-title {
+  font-size: larger;
 }
 
 .v-toolbar a {
