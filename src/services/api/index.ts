@@ -11,7 +11,7 @@ class API {
   // static get DRIVE_GRAPHQL() { return '/drive/graphql' };
   DRIVE_GRAPHQL = '/drive/graphql';
   DRIVE_UPLOAD = '/drive/v1/upload';
-  PHASER_GRAPHQL = '/platform/phaser/graphql';
+  PHASER_GRAPHQL = '/phaser/graphql';
   NOTES_GRAPHQL = '/notes/graphql';
   CONTACTS_GRAPHQL = '/contacts/graphql';
   SESSION_KEY = '__bloom';
